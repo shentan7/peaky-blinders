@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peaky Blinders · Tommy Shelby 通讯室</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="fog"></div>
+    <main class="app">
+      <aside class="sidebar">
+        <h1>伯明翰联络网</h1>
+        <p class="identity">视角：<strong>Thomas Shelby</strong></p>
+        <ul class="character-list" id="characterList"></ul>
+      </aside>
+
+      <section class="chat-panel">
+        <header class="chat-header">
+          <h2 id="activeCharacter">Arthur Shelby</h2>
+          <p id="characterDesc">战友与兄长，脾气暴烈但忠诚。</p>
+        </header>
+
+        <div class="messages" id="messages"></div>
+
+        <form class="composer" id="chatForm">
+          <label for="messageInput" class="sr-only">给角色发送消息</label>
+          <input
+            id="messageInput"
+            type="text"
+            placeholder="汤米，发号施令吧……"
+            autocomplete="off"
+            required
+          />
+          <button type="submit">发送</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
